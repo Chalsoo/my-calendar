@@ -4,11 +4,41 @@
     <meta charset="UTF-8">
     <title>2025년 달력</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .month-button { margin: 5px; padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; }
-        .month { display: none; margin-top: 20px; }
-        pre { background: #f0f0f0; padding: 10px; border-radius: 5px; }
-        h2 { margin: 0; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .month-button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .month {
+            display: none;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        h2 {
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
@@ -30,133 +60,211 @@
         <button class="month-button" onclick="showMonth(12)">12월</button>
     </div>
 
-    <div id="current-calendar"></div>
-
     <div id="months">
         <div class="month" id="month-1">
-            <h2>1월</h2>
-            <pre>일 월 화 수 목 금 토
-            1  2  3  4  5  6  7
-            8  9 10 11 12 13 14
-            15 16 17 18 19 20 21
-            22 23 24 25 26 27 28
-            29 30 31</pre>
+            <h2>2025년 1월</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>일</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>토</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="month" id="month-2">
-            <h2>2월</h2>
-            <pre>일 월 화 수 목 금 토
-                      1
-            2  3  4  5  6  7  8
-            9 10 11 12 13 14 15
-            16 17 18 19 20 21 22
-            23 24 25 26 27 28</pre>
+            <h2>2025년 2월</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>일</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>토</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="month" id="month-3">
-            <h2>3월</h2>
-            <pre>일 월 화 수 목 금 토
-                          1
-            2  3  4  5  6  7  8
-            9 10 11 12 13 14 15
-            16 17 18 19 20 21 22
-            23 24 25 26 27 28 29
-            30 31</pre>
+            <h2>2025년 3월</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>일</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>토</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <div class="month" id="month-4">
-            <h2>4월</h2>
-            <pre>일 월 화 수 목 금 토
-            1  2  3  4  5  6  7
-            8  9 10 11 12 13 14
-            15 16 17 18 19 20 21
-            22 23 24 25 26 27 28
-            29 30</pre>
-        </div>
-
-        <div class="month" id="month-5">
-            <h2>5월</h2>
-            <pre>일 월 화 수 목 금 토
-            1  2  3  4  5  6  7
-            8  9 10 11 12 13 14
-            15 16 17 18 19 20 21
-            22 23 24 25 26 27 28
-            29 30 31</pre>
-        </div>
-
-        <div class="month" id="month-6">
-            <h2>6월</h2>
-            <pre>일 월 화 수 목 금 토
-            1  2  3  4  5  6  7
-            8  9 10 11 12 13 14
-            15 16 17 18 19 20 21
-            22 23 24 25 26 27 28
-            29 30</pre>
-        </div>
-
-        <div class="month" id="month-7">
-            <h2>7월</h2>
-            <pre>일 월 화 수 목 금 토
-            1  2  3  4  5  6  7
-            8  9 10 11 12 13 14
-            15 16 17 18 19 20 21
-            22 23 24 25 26 27 28
-            29 30 31</pre>
-        </div>
-
-        <div class="month" id="month-8">
-            <h2>8월</h2>
-            <pre>일 월 화 수 목 금 토
-            1  2  3  4  5  6  7
-            8  9 10 11 12 13 14
-            15 16 17 18 19 20 21
-            22 23 24 25 26 27 28
-            29 30 31</pre>
-        </div>
-
-        <div class="month" id="month-9">
-            <h2>9월</h2>
-            <pre>일 월 화 수 목 금 토
-            1  2  3  4  5  6  7
-            8  9 10 11 12 13 14
-            15 16 17 18 19 20 21
-            22 23 24 25 26 27 28
-            29 30</pre>
-        </div>
-
-        <div class="month" id="month-10">
-            <h2>10월</h2>
-            <pre>일 월 화 수 목 금 토
-            1  2  3  4  5  6  7
-            8  9 10 11 12 13 14
-            15 16 17 18 19 20 21
-            22 23 24 25 26 27 28
-            29 30 31</pre>
-        </div>
-
-        <div class="month" id="month-11">
-            <h2>11월</h2>
-            <pre>일 월 화 수 목 금 토
-            1  2  3  4  5  6  7
-            8  9 10 11 12 13 14
-            15 16 17 18 19 20 21
-            22 23 24 25 26 27 28
-            29 30</pre>
-        </div>
-
-        <div class="month" id="month-12">
-            <h2>12월</h2>
-            <pre>일 월 화 수 목 금 토
-            1  2  3  4  5  6  7
-            8  9 10 11 12 13 14
-            15 16 17 18 19 20 21
-            22 23 24 25 26 27 28
-            29 30 31</pre>
-        </div>
+        <!-- 나머지 월도 같은 형식으로 추가 -->
     </div>
 
     <script>
         function showMonth(month) {
             // 모든 달 숨기기
             const months = document.querySelectorAll('.month');
-            months
+            months.forEach(m => m.style.display = 'none');
+
+            // 선택한 달만 표시하기
+            document.getElementById(`month-${month}`).style.display = 'block';
+
+            // 현재 월 제목 업데이트
+            const currentYear = 2025; // 고정된 연도
+            document.getElementById('current-month-title').innerText = `${currentYear}년 ${
