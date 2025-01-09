@@ -13,7 +13,7 @@
 </head>
 <body>
     <h1>2025년 달력</h1>
-    <h2>이번 달: <span id="current-month"></span></h2>
+    <h2 id="current-month-title"></h2>
 
     <div id="buttons">
         <button class="month-button" onclick="showMonth(1)">1월</button>
@@ -158,4 +158,4 @@
     <script>
         // 현재 날짜를 가져와서 달력에 표시
         const currentDate = new Date();
-        const currentYear = currentDate.getFull
+        const currentMonth = currentDate.getMonth() + 1
