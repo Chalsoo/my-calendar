@@ -13,6 +13,8 @@
 </head>
 <body>
     <h1>2025년 달력</h1>
+    <h2>이번 달: <span id="current-month"></span></h2>
+
     <div id="buttons">
         <button class="month-button" onclick="showMonth(1)">1월</button>
         <button class="month-button" onclick="showMonth(2)">2월</button>
@@ -27,6 +29,8 @@
         <button class="month-button" onclick="showMonth(11)">11월</button>
         <button class="month-button" onclick="showMonth(12)">12월</button>
     </div>
+
+    <div id="current-calendar"></div>
 
     <div id="months">
         <div class="month" id="month-1">
@@ -152,7 +156,6 @@
     </div>
 
     <script>
-        function showMonth(month) {
-            // 모든 달 숨기기
-            const months = document.querySelectorAll('.month');
-            months.forEach(m => m.style.display = 'none');
+        // 현재 날짜를 가져와서 달력에 표시
+        const currentDate = new Date();
+        const currentYear = currentDate.getFull
